@@ -17,7 +17,6 @@ a
 {
 	cursor: pointer;
 }
-}
 a:hover
 {
 	text-decoration: none; 
@@ -26,9 +25,9 @@ a:hover
 {
 	padding-left: 40px;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255);
 	height: 96px;
-	border-bottom: 1px solid #4f7279e3;
+	border-bottom: 1px solid #BEBEBE;
 	
 }
 .logo
@@ -64,6 +63,22 @@ a:hover
 	margin-top: 35px;
 	font-size: 18px;
 	letter-spacing: normal;
+}
+.nfixed
+{
+	z-index: 100;
+	display: none;
+	position: fixed;
+	top: 0px;
+	height: 50px;
+}
+.nfixed .logo
+{
+	height: 30px;
+}
+.nfixed .navigate li
+{
+	margin-top: 12px;
 }
 .panel1-header
 {

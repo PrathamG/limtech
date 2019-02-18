@@ -11,14 +11,24 @@
 
 </head>
 <body>
-	<div class = 'masthead'>
+	<div class = 'masthead' id = "regnav">
 		<img class = 'logo' src = "logo.png">
 		<ul class = 'navigate'>
-			<li><a>Contact Us</a></li>
-			<li><a>When</a></li>
-			<li><a>Why</a></li>
-			<li><a>Who</a></li>
-			<li><a>What</a></li>
+			<li><a href = "#contact-panel">Contact Us</a></li>
+			<li><a href = "#when-panel">When</a></li>
+			<li><a href = "#why-panel">Why</a></li>
+			<li><a href = "#who-panel">Who</a></li>
+			<li><a href = "#what-panel">What</a></li>
+		</ul>
+	</div>
+	<div class = 'masthead nfixed' id = "fixnav">
+		<img class = 'logo' src = "logo.png">
+		<ul class = 'navigate'>
+			<li><a href = "#contact-panel">Contact Us</a></li>
+			<li><a href = "#when-panel">When</a></li>
+			<li><a href = "#why-panel">Why</a></li>
+			<li><a href = "#who-panel">Who</a></li>
+			<li><a href = "#what-panel">What</a></li>
 		</ul>
 	</div>
 	<div class = 'panel1'>
@@ -29,7 +39,7 @@
 			</div>
 		</div>
 	</div>
-	<div class = 'what-panel'>
+	<div class = 'what-panel' id = "what-panel">
 		<span class = "panela-heading">What We Do</span>
 		<div class = "hrline"></div>
 		<div class = "row">
@@ -43,18 +53,18 @@
 			</div>
 			<div class = "what-step col-sm-4">
 				<img src = "profit.png">
-				<div class = 'panela-sub'>We develop innovative products specific to your business needs, which measurably boost your business efficency, cost savings, and customer satisfaction. </div>
+				<div class = 'panela-sub'>We develop innovative products specific to your business needs, which measurably boost your business efficency, cost savings and customer satisfaction. </div>
 			</div>
 		</div>
 	</div>
-	<div class = "who-panel">
+	<div class = "who-panel" id = "who-panel">
 		<div class = 'row'>
 			<span class = "panelb-heading">Who Are We</span>
 			<div class = "hrline" style="border-bottom: 1px solid #ad7800"></div>
 			<div class = "panelb-sub">LIM is an innovation and technology one-stop shop tailored for the insurance industry. Our team consists of outstanding experts from Law, Insurance and Technology. They possess not just exceptional capabilities, but also unbeatable passion and belief in using modern technology to improve people's quality of life. We aspire to revolutionize today's insurance industry by making it smarter, safer and smoother for everyone involved.</div>
 		</div>
 	</div>
-	<div class = "why-panel">
+	<div class = "why-panel" id = "why-panel">
 		<span class = "panela-heading">Why Choose Us</span>
 		<div class = "hrline"></div>
 		<div class = 'row'>
@@ -83,19 +93,19 @@
 				<span><i class="fas fa-pen-fancy"></i></span>
 				<span class = "title">Products For You</span>
 				<div class = "panela-sub" style = "margin-top: 10px">
-					We know exactly what each department within an insurer needs, and which technologies will serve you best. We develop products that match your operations and can be easily integrated in your workplace.
+					We know exactly what each department within an insurer needs and which technologies will serve you best. We develop products that match your operations and can be easily integrated in your workplace.
 				</div>
 			</div>
 		</div>
 		</div>
-		<div class = "when-panel">
+		<div class = "when-panel" id = "when-panel">
 		<div class = 'row'>
 			<span class = "panelb-heading">When To Act</span>
 			<div class = "hrline" style="border-bottom: 1px solid #ad7800"></div>
-			<div class = "panelb-sub">The insurance industry is undergoing a revolution. Modern technology is already disrupting the traditional market in diverse ways, making substantial impact on business costs and revenue. Today's customers are more discerning and informed, seeking to pay less and get more. Join us now as pioneers in this transformation and get an edge over the competition. Gain an advantage by increasing efficiency, reducing costs, and making your customers' insurance journey effortless, from enrollment to claim.</div>
+			<div class = "panelb-sub">The insurance industry is undergoing a revolution. Modern technology is already disrupting the traditional market in diverse ways, making substantial impact on business costs and revenue. Today's customers are more discerning and informed, seeking to pay less and get more. Join us now as pioneers in this transformation and get an edge over the competition. Gain an advantage by increasing efficiency, reducing costs and making your customers' insurance journey effortless, from enrollment to claim.</div>
 		</div>
 		</div>
-		<div class = 'contact-panel'>
+		<div class = 'contact-panel' id = "contact-panel">
 			<span class = "panela-heading">Contact Us</span>
 			<div class = "hrline"></div>
 			<div class = "when-det row">
