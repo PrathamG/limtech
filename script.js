@@ -20,14 +20,30 @@ $(function()
 
 	$(window).scroll(function()
 	{
-	    if ($(this).scrollTop() >= 100) 
+	    if ($(this).scrollTop() >= 20) 
 		{
-			
-			$("#fixnav").slideDown(200);
+			$(".mobnav").css("background-color", "rgb(64, 64, 64)");
 		}
 		else 
 		{
-			$("#fixnav").slideUp(200);
+			$(".mobnav").css("background-color", "transparent");
 		}
 	});
+
+	if($(window).width() > 900)
+	{
+
+		$(window).scroll(function()
+		{
+		    if ($(this).scrollTop() >= 100) 
+			{
+				
+				$("#fixnav").slideDown(200);
+			}
+			else 
+			{
+				$("#fixnav").slideUp(200);
+			}
+		});
+	}
 });
