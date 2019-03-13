@@ -41,11 +41,11 @@
 		</div>
 		<div class = 'moblist'>
 			<ul>
-				<a href = "#what-panel" class = "moblink"><li>What We Do</li></a>
-				<a href = "#who-panel" class = "moblink"><li>Who Are We</li></a>
-				<a href = "#why-panel" class = "moblink"><li>Why Choose Us</li></a>
-				<a href = "#when-panel" class = "moblink"><li>When To Act</li></a>
-				<a href = "#contact-panel" class = "moblink"><li>Where To Reach Us</li></a>
+				<a href = "#what-panel" class = "moblink"><li><span class = "ylw-wrd">What</span> We Do</li></a>
+				<a href = "#who-panel" class = "moblink"><li><span class = "ylw-wrd">Who</span> Are We</li></a>
+				<a href = "#why-panel" class = "moblink"><li><span class = "ylw-wrd">Why</span> Choose Us</li></a>
+				<a href = "#when-panel" class = "moblink"><li><span class = "ylw-wrd">When</span> To Act</li></a>
+				<a href = "#contact-panel" class = "moblink"><li><span class = "ylw-wrd">Where</span> To Reach Us</li></a>
 			</ul>
 		</div>
 		<a href="#top">
