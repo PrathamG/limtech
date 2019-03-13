@@ -1,0 +1,449 @@
+html
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 0;
+	margin: 0 0;
+	letter-spacing: 1.3px;
+	font-family: "Open Sans";
+}
+a
+{
+	cursor: pointer;
+}
+a:hover
+{
+	text-decoration: none; 
+}
+.row
+{
+	margin: 0 0;
+}
+.masthead
+{
+	padding-left: 30px;
+	width: 100%;
+	background-color: rgba(255, 255, 255);
+	height: 96px;
+	border-bottom: 1px solid #BEBEBE;	
+}
+.mobnav
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	padding-left: 12px;
+	height: 40px;
+	width: 100%;
+	z-index: 100;
+	border-bottom: 1px solid #bbbbbb;
+}
+.mobnav img
+{
+	margin-top: 10px;
+	height: 20px;
+	width: 50px;
+}
+.mobnav i
+{
+	padding: 5px 5px;
+	margin-top: 7px;
+	margin-right: 11px;
+	font-size: 16px;
+	float: right;
+	color: black;
+}
+.mobnav i:hover
+{
+	border: 1px solid black;
+}
+.mobnav .far
+{
+	font-size: 20px;
+	display: none;
+}
+.moblist
+{
+	display: none;
+	position: fixed;
+	top: 40px;
+	background-color: white;
+	z-index: 90;
+	width: 100%;
+	height: 100%;
+}
+.moblist ul
+{
+	padding-left: 0px;
+	height: 100%;
+	list-style-type: none;
+}
+.moblist li
+{
+	background-color: white;
+	line-height: 55px;
+	font-size: 17px;
+	height: 20%;
+	max-height: 55px;
+	border-bottom: 1px solid #bbbbbb;
+	padding: 0 0;
+	text-align: center;
+}
+.moblink:hover
+{
+	color: #e8cd06;
+}
+.logo
+{
+	margin-top: 14px;
+	height: 65px;
+	width: 160px;
+}
+.navigate
+{
+	font-family: "Open sans";
+	float: right;
+	width: 700px;
+	height: 100%;
+	padding-right: 0px;
+	padding-left: 0PX;
+	margin-bottom: 0px;
+}
+.navigate a
+{
+	color: #4f7279e3;
+}
+.navigate a:hover
+{
+	text-decoration: none;
+	color: #578fe4;
+}
+.navigate li
+{
+	float: right;
+	display: inline;
+	list-style: none;
+	margin-right: 65px;
+	margin-top: 35px;
+	font-size: 18px;
+	letter-spacing: normal;
+}
+.nfixed
+{
+	background-color: white;
+	z-index: 100;
+	display: none;
+	position: fixed;
+	top: 0px;
+	height: 50px;
+}
+.nfixed .logo
+{
+	height: 30px;
+	width: 75px;
+	margin-top: 11px;
+}
+.nfixed .navigate li
+{
+	margin-top: 12px;
+}
+.panel1-header
+{
+	min-height: 550px;
+	width: 100%;
+	padding-bottom:40px;
+  	background-image: url("xyz.jpg");
+	background-position: 0% 60%;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+   	border-bottom: 1px solid #4f7279e3;
+}
+.panel1-cap
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 195px;
+	text-align: center;
+	height: 400px;
+	width: 65%;
+}
+.panel1-header span
+{
+	color: white;
+	text-align: center; 
+	display: inline-block;
+	padding: 0 10px;
+	letter-spacing: 3px;
+}
+#p1head
+{
+	font-family: "Syncopate";
+	font-size: 45px;
+	font-weight: 700;
+}
+#p1sub
+{
+	font-family: "Open Sans";
+	padding-top: 30px;
+	font-size: 22px;
+	line-height: 29px;
+	font-weight: 600;
+}
+.what-panel
+{
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 100%;
+	min-height: 515px;
+	padding-bottom: 35px;
+	background-image: url("whatpanelbg.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.panela-heading
+{
+	margin-top: 25px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-family: "Nunito";
+	font-size: 25px;
+	font-weight: 700;
+}
+.spl-header
+{
+	font-size: 38px;
+	color: #e8cd06;
+}
+.hrline
+{
+	border-bottom: 1px solid #BEBEBE;
+    height: 0px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9px;
+}
+.what-step
+{
+	text-align: center;
+	margin-top: 50px;
+	padding: 0 15px;
+}
+.what-step img
+{
+	height: 140px;
+	width: 230px;
+}
+.panela-sub
+{
+	margin-top: 38px;
+	font-size: 16px;
+}
+.who-panel
+{
+	text-align: center;
+	background-image: url("whopanelbg.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	min-height: 390px;
+	padding-bottom: 45px;
+}
+.who-panel .row
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+.panelb-heading
+{
+	margin-top: 45px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-family: "Nunito";
+	font-size: 28px;
+	font-weight: 700;
+	color: #fdfdfd;
+}
+.panelb-sub
+{
+	margin-top: 40px;
+	font-size: 17px;
+	text-align: center;
+	color: #fdfdfd;
+}
+.why-panel
+{
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 100%;
+	padding-bottom: 50px;
+	min-height: 515px;
+	background-image: url("whypanelbg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.why-feat
+{
+	text-align: center;
+	margin-top: 40px;
+}
+.why-feat img
+{
+	height: 150px;
+	width: 220px;
+}
+.title
+{
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.when-panel
+{
+	text-align: center;
+	background-image: url("whenpanelbg.jpeg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	min-height: 390px;
+	padding-bottom: 45px;
+}
+.when-panel .row
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+.contact-panel
+{
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-image: url("wherepanelbg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 360px;
+	padding-bottom: 30px;
+	position: relative;
+}
+.clabel
+{
+	padding-left: 0px;
+	font-size: 17px;
+	font-weight: 600;
+	color: blue;
+}
+.cdeet
+{
+	color: blue;
+	font-size: 17px;
+}
+.when-det
+{
+	margin-top:20px;
+}
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    50%{    color: yellow; }
+    100%{   color: red;    }
+}
+.top-btn
+{
+	display: none;
+	border-radius: 50%;
+	color: #525252;
+	position: fixed;
+	padding-left: 13.5px;
+	padding-top: 11px;
+	bottom: 25px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #525252;
+	background-color: #d2d2d2;
+	z-index: 1000; 
+}
+.copyright
+{
+	position: absolute;
+	bottom: 4px;
+	right: 3px;
+	font-size: 12px;
+	color: black;
+}
+@media (max-width: 1200px)
+{
+	
+}
+@media (max-width: 900px)
+{
+	.masthead
+	{
+		display: none;
+	}
+	.nfixed
+	{
+		display: none;
+	}
+	.panel1-cap
+	{
+		width: 75%;
+	}
+	.mobnav
+	{
+		display: block;
+	}
+	.panel1-header
+	{
+		margin-top: 40px;
+	}
+	.spl-pad
+	{
+		margin-left: 15px;
+	}
+	.cdeet
+	{
+		padding-left: 0px;
+	}
+
+}
+@media (max-width: 600px)
+{
+	#p1sub
+	{
+		font-size: 18px;
+	}
+	.panel1-header
+	{
+		margin-top: 40px;
+		min-height: 50px;
+	}
+	.panel1-cap
+	{
+		padding-top: 85px;
+		width: 100%;
+	}
+	.panela-sub
+	{
+		margin-top: 30px;
+	}
+}
