@@ -21,9 +21,13 @@ a:hover
 {
 	text-decoration: none; 
 }
+.row
+{
+	margin: 0 0;
+}
 .masthead
 {
-	padding-left: 40px;
+	padding-left: 30px;
 	width: 100%;
 	background-color: rgba(255, 255, 255);
 	height: 96px;
@@ -34,16 +38,18 @@ a:hover
 	display: none;
 	position: fixed;
 	top: 0;
-	background-color: transparent;
+	background-color: white;
 	padding-left: 12px;
 	height: 40px;
 	width: 100%;
 	z-index: 100;
+	border-bottom: 1px solid #bbbbbb;
 }
 .mobnav img
 {
 	margin-top: 10px;
-	height: 18px;
+	height: 20px;
+	width: 50px;
 }
 .mobnav i
 {
@@ -52,14 +58,20 @@ a:hover
 	margin-right: 11px;
 	font-size: 16px;
 	float: right;
-	color: white;
+	color: black;
 }
 .mobnav i:hover
 {
 	border: 1px solid black;
 }
+.mobnav .far
+{
+	font-size: 20px;
+	display: none;
+}
 .moblist
 {
+	display: none;
 	position: fixed;
 	top: 40px;
 	background-color: white;
@@ -80,14 +92,19 @@ a:hover
 	font-size: 17px;
 	height: 20%;
 	max-height: 55px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #bbbbbb;
 	padding: 0 0;
 	text-align: center;
 }
+.moblink:hover
+{
+	color: #e8cd06;
+}
 .logo
 {
-	margin-top: 10px;
-	height: 75px;
+	margin-top: 14px;
+	height: 65px;
+	width: 160px;
 }
 .navigate
 {
@@ -120,6 +137,7 @@ a:hover
 }
 .nfixed
 {
+	background-color: white;
 	z-index: 100;
 	display: none;
 	position: fixed;
@@ -129,6 +147,8 @@ a:hover
 .nfixed .logo
 {
 	height: 30px;
+	width: 75px;
+	margin-top: 11px;
 }
 .nfixed .navigate li
 {
@@ -136,24 +156,23 @@ a:hover
 }
 .panel1-header
 {
-	min-height: 530px;
+	min-height: 550px;
 	width: 100%;
+	padding-bottom:40px;
   	background-image: url("xyz.jpg");
-	background-position: center;
+	background-position: 0% 60%;
   	background-repeat: no-repeat;
   	background-size: cover;
-    background-blend-mode: color;
    	border-bottom: 1px solid #4f7279e3;
 }
 .panel1-cap
 {
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 157px;
+	padding-top: 195px;
 	text-align: center;
 	height: 400px;
 	width: 65%;
-	background-color: rgba(0, 0, 0, 0.55);
 }
 .panel1-header span
 {
@@ -165,25 +184,29 @@ a:hover
 }
 #p1head
 {
-	font-family: "Nunito";
-	font-size: 38px;
+	font-family: "Syncopate";
+	font-size: 45px;
 	font-weight: 700;
 }
 #p1sub
 {
 	font-family: "Open Sans";
-	padding-top: 23px;
-	font-size: 19px;
+	padding-top: 30px;
+	font-size: 22px;
 	line-height: 29px;
 	font-weight: 600;
 }
 .what-panel
 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	min-height: 490px;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 100%;
+	min-height: 515px;
 	padding-bottom: 35px;
+	background-image: url("whatpanelbg.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 }
 .panela-heading
 {
@@ -192,8 +215,13 @@ a:hover
 	width: 100%;
 	text-align: center;
 	font-family: "Nunito";
-	font-size: 28px;
+	font-size: 25px;
 	font-weight: 700;
+}
+.spl-header
+{
+	font-size: 38px;
+	color: #e8cd06;
 }
 .hrline
 {
@@ -212,8 +240,8 @@ a:hover
 }
 .what-step img
 {
-	height: 170px;
-	width: 170px;
+	height: 140px;
+	width: 230px;
 }
 .panela-sub
 {
@@ -227,7 +255,7 @@ a:hover
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
-	min-height: 380px;
+	min-height: 390px;
 	padding-bottom: 45px;
 }
 .who-panel .row
@@ -253,38 +281,43 @@ a:hover
 	font-size: 17px;
 	text-align: center;
 	color: #fdfdfd;
-	line-height: 30px;
 }
 .why-panel
 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	padding-bottom: 35px;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 100%;
+	padding-bottom: 50px;
+	min-height: 515px;
+	background-image: url("whypanelbg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .why-feat
 {
 	text-align: center;
 	margin-top: 40px;
 }
-.why-feat i
+.why-feat img
 {
-	font-size: 40px;
-	display: block;
-	text-align: center;
-	margin-bottom: 20px;
-	color: #3b5dc5;
+	height: 150px;
+	width: 220px;
 }
 .title
 {
+	margin-top: 15px;
 	font-size: 18px;
 	font-weight: 600;
 }
+
 .when-panel
 {
 	text-align: center;
-	background-image: url("whenpanelbg.jpg");
-	min-height: 350px;
+	background-image: url("whenpanelbg.jpeg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	min-height: 390px;
 	padding-bottom: 45px;
 }
 .when-panel .row
@@ -295,38 +328,79 @@ a:hover
 }
 .contact-panel
 {
+	text-align: justify;
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
-	min-height: 330px;
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-image: url("wherepanelbg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 360px;
 	padding-bottom: 30px;
+	position: relative;
 }
 .clabel
 {
+	padding-left: 0px;
 	font-size: 17px;
 	font-weight: 600;
-}
-.clabel:first-child
-{
+	color: blue;
 }
 .cdeet
 {
+	color: blue;
 	font-size: 17px;
 }
 .when-det
 {
 	margin-top:20px;
 }
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    50%{    color: yellow; }
+    100%{   color: red;    }
+}
+.top-btn
+{
+	display: none;
+	border-radius: 50%;
+	color: #525252;
+	position: fixed;
+	padding-left: 13.5px;
+	padding-top: 11px;
+	bottom: 25px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #525252;
+	background-color: #d2d2d2;
+	z-index: 1000; 
+}
+.copyright
+{
+	position: absolute;
+	bottom: 4px;
+	right: 3px;
+	font-size: 12px;
+	color: black;
+}
 @media (max-width: 1200px)
 {
-	.nfixed
-	{
-		display: none;
-	}
+	
 }
 @media (max-width: 900px)
 {
 	.masthead
+	{
+		display: none;
+	}
+	.nfixed
 	{
 		display: none;
 	}
@@ -338,16 +412,34 @@ a:hover
 	{
 		display: block;
 	}
+	.panel1-header
+	{
+		margin-top: 40px;
+	}
+	.spl-pad
+	{
+		margin-left: 15px;
+	}
+	.cdeet
+	{
+		padding-left: 0px;
+	}
+
 }
 @media (max-width: 600px)
 {
+	#p1sub
+	{
+		font-size: 18px;
+	}
 	.panel1-header
 	{
+		margin-top: 40px;
 		min-height: 50px;
 	}
 	.panel1-cap
 	{
-		padding-top: 105px;
+		padding-top: 85px;
 		width: 100%;
 	}
 	.panela-sub
