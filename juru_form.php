@@ -27,11 +27,10 @@
 
 
 
-		$smtpUsername = 'juruwebenq@gmail.com';
-		$smtpPassword = 'juru$Pass88';
-		$emailTo = 'goradiapratham@gmail.com';
+		$smtpUsername = '';
+		$smtpPassword = '';
 		$emailFrom = 'juruwebenq@gmail.com';
-		/*
+		
 		$mail = new PHPMailer;
 		$mail->isSMTP(); 
 		$mail->SMTPDebug = 0; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
@@ -42,17 +41,16 @@
 		$mail->Username = $smtpUsername;
 		$mail->Password = $smtpPassword;
 		$mail->setFrom($emailFrom);
-		$mail->addAddress($emailTo);
-		#$mail->addAddress('info@lessismore.best');
-		#$mail->addAddress('webmaster@thejuru.com');
+		$mail->addAddress('info@lessismore.best');
+		$mail->addAddress('webmaster@thejuru.com');
 		$mail->Subject = 'JURU Website Enquiry';
 		$mail->isHTML(false);
 		$mail->Body = $content;
 		//$mail->msgHTML($content); //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,
 		// $mail->addAttachment('images/phpmailer_mini.png'); //Attach an image file
-		*/
 		
-		if(true)//($mail->send())
+		
+		if($mail->send())
 		{
 		    echo "yeet";
 		}
