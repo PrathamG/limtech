@@ -6,13 +6,16 @@
 	<!-- Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Google Fonts "Open Sans + Nunito" -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito:700|Open+Sans:400,600,700|Syncopate|Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900|Open+Sans:400,500,600,700|Syncopate" rel="stylesheet">
 	<!-- FontAwesome Library for icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 </head>
 <body>
+	<!-- JQUERY v3.3.1 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
 	<div class = "container-fluid" style = "padding: 0px 0px">
+		<?php include 'popup.php';?>
 		<span id = "top"></span>
 		<div class = 'masthead' id = "regnav">
 			<img class = 'logo' src = "logo.png">
@@ -22,6 +25,9 @@
 				<li><a href = "#why-panel">Why</a></li>
 				<li><a href = "#who-panel">Who</a></li>
 				<li><a href = "#what-panel">What</a></li>
+				<li><a href = "#juru-panel">
+					<span class = 'nav-juru'>JURU</span>
+				</a></li>
 			</ul>
 		</div>
 		<div class = 'masthead nfixed' id = "fixnav">
@@ -32,6 +38,7 @@
 				<li><a href = "#why-panel">Why</a></li>
 				<li><a href = "#who-panel">Who</a></li>
 				<li><a href = "#what-panel">What</a></li>
+				<li><a href = "#juru-panel"><span class = 'nav-juru'>JURU</span></a></li>
 			</ul>
 		</div>
 		<div class = 'mobnav' id = "mobnav">
@@ -41,11 +48,14 @@
 		</div>
 		<div class = 'moblist'>
 			<ul>
-				<a href = "#what-panel" class = "moblink"><li>What We Do</li></a>
-				<a href = "#who-panel" class = "moblink"><li>Who Are We</li></a>
-				<a href = "#why-panel" class = "moblink"><li>Why Choose Us</li></a>
-				<a href = "#when-panel" class = "moblink"><li>When To Act</li></a>
-				<a href = "#contact-panel" class = "moblink"><li>Where To Reach Us</li></a>
+				<a href = "#juru-panel" class = "moblink"><li>
+					<span style = 'color: #525252'> The</span><span style = 'color: #89000d; font-weight: 600'> JURU</span>
+				</li></a>
+				<a href = "#what-panel" class = "moblink"><li><span class = "ylw-wrd">What</span> We Do</li></a>
+				<a href = "#who-panel" class = "moblink"><li><span class = "ylw-wrd">Who</span> Are We</li></a>
+				<a href = "#why-panel" class = "moblink"><li><span class = "ylw-wrd">Why</span> Choose Us</li></a>
+				<a href = "#when-panel" class = "moblink"><li><span class = "ylw-wrd">When</span> To Act</li></a>
+				<a href = "#contact-panel" class = "moblink"><li><span class = "ylw-wrd">Where</span> To Reach Us</li></a>
 			</ul>
 		</div>
 		<a href="#top">
@@ -57,6 +67,35 @@
 			<div class = 'panel1-cap'>
 				<span id="p1head">LESS IS MORE</span>
 				<span id="p1sub">No pain, All gain?<br>With LIM, transformation to the digital era is easier than you think!</span>
+			</div>
+		</div>
+		<div class = 'row juru-panel' id = "juru-panel">
+			<div class = "juru-panel-cont row">
+				<div class = "panela-heading" style = 'font-size: 38px'>
+					<span style = 'color: #525252'>The</span>
+					<span class = 'spl-header' style = 'color: #89000d'><b>JURU</b></span>
+				</div>
+				<div class = "hrline"></div>
+				<div class = 'col-md-1'></div>
+				<div class = 'col-md-3 juru-panel-logo'>
+					<img src = 'juru_logo.png'>
+				</div>
+				<div class = 'col-md-7 juru-panel-text'>
+					<div class = 'row' style = 'margin-bottom: 10px'>
+						<span class = 'juru-panel-title'>JURU</span>
+						<span class = 'juru-panel-mini-title'>
+							is a legal-tech and insurtech innovation that is first of its kind in Hong Kong.
+						</span>
+					</div>
+					 JURU is a smart tool for assessing and handling Employees Compensation claims, Fatal claims, and Common Law Personal Injuries. Running on latest technologies like AI and NLP, it identifies relevant court precedents and calculates compensation estimates with efficiency and accuracy. It saves insurers valuable time and money.
+					<div class = 'juru-panel-desc-link'>
+						<a href = 'juru.php' target = '_blank'>Learn More on JURU's Website <i class="fas fa-arrow-right"></i></a>
+					</div>
+					<div class = 'trial-btn toggle-popup popup-form-toggle'> Get your FREE TRIAL </div>
+					<a href="https://thejuru.com" target = '_blank'>
+						<div class = 'trial-btn sign-btn'> Sign in to The JURU</div>
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class = 'row what-panel' id = "what-panel">
@@ -171,8 +210,5 @@
 			</div>
 		</div>
 	</div>
-	<!-- JQUERY v3.3.1 -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="script.js"></script>
 </body>
 </html>

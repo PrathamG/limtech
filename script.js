@@ -1,5 +1,6 @@
 $(function()
 {
+	//Same page animated scrolling
 	$("a").click(function()
 	{
 		if (this.hash !== "") 
@@ -18,6 +19,7 @@ $(function()
 	    }
 	});
 
+	//Toggles display of fixed navbar based on scrolling
 	if($(window).width() > 900)
 	{
 		$(window).scroll(function()
@@ -29,11 +31,12 @@ $(function()
 			}
 			else
 			{
-				$("#fixnav").slideUp(200);
+				$("#fixnav").hide();
 			}
 		});
 	}
 
+	//Scroll to page top on top-button click
 	if($(window).width() < 900)
 	{
 		$(window).scroll(function()
@@ -50,6 +53,7 @@ $(function()
 		});
 	}
 
+	//Toggles display of mobile navigation menu
 	$(".mobmenu").click(function()
 	{
 		if(!$('.moblist').is(":visible"))
@@ -66,11 +70,51 @@ $(function()
 		}
 	});
 
+	//Hides mobile navigation menu when something in the menu is clicked
 	$(".moblink").click(function()
 	{
 		$(".mobnav .far").hide();
 		$(".mobnav .fas").show();
 		$('.moblist').fadeOut(100);
 	});
+
+	//Prevents scrolling when popup is visible
+	if($('.popup').is(":visible"))
+	{
+		$('body').css('overflow', 'hidden');
+	}
+
+	//Toggles display of popup 
+	$(".toggle-popup").click(function()
+	{
+		if(!$('.popup').is(":visible"))
+		{
+			$(".popup").fadeIn(100);
+			$('body').css('overflow-y', 'hidden');
+		}
+		else
+		{
+			$(".popup").fadeOut(100);
+			$('body').css('overflow-y', 'scroll');
+		}	
+	});
+
+	//Toggles display of popup form
+	$(".popup-form-toggle").click(function()
+	{
+
+		if(!$('#popup-2').is(":visible"))
+		{
+			console.log('babbu-lala');
+			$("#popup-1").hide();
+			$("#popup-2").fadeIn(100);
+		}
+		else
+		{
+			$("#popup-2").hide();
+			$("#popup-1").fadeIn(100);
+		}
+	});
+
 });
 
